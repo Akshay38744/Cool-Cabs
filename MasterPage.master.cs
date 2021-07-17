@@ -17,7 +17,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
             A1.Visible = true;
         }
 
-        else if (Session["name"].ToString() == "Admin" && Session["pwd"].ToString() == "Admin123")
+       if (Session["name"] == "Admin" && Session["pwd"] == "Admin123")
         {
             A2.Visible = true;
         }
